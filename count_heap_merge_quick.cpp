@@ -176,6 +176,7 @@ int main(){
 	//int size= sizeof(ordCresc) / sizeof(ordCresc[0]); //TROCAR
 	int range = 2000;
 	
+	cout<<"-------Ordenação com array ordenado crescente-------\n";
     cout<<"-------Ordenação por Count Sort-------\n";
     auto startCS = chrono::steady_clock::now();
     countingSort(ordCresc,n,range); //TROCAR
@@ -214,6 +215,49 @@ int main(){
     printArray(ordCresc,n);
  	cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endQS - startQS).count()
+        << " ns" << endl;
+    
+    
+    
+    cout<<"-------Ordenação com array ordenado decrescente-------\n";
+    cout<<"-------Ordenação por Count Sort-------\n";
+    auto startCS2 = chrono::steady_clock::now();
+    countingSort(ordDec,n,range); //TROCAR
+    auto endCS2 = chrono::steady_clock::now();
+	cout<<"Array ordenado:"<<endl;
+    printArray(ordDec,n);
+    cout << "\nTempo decorrido em nanossegundos: "
+        << chrono::duration_cast<chrono::nanoseconds>(endCS2 - startCS2).count()
+        << " ns" << endl;
+
+	cout<<"\n\n-------Ordenação por Heap Sort-------\n";
+ 	auto startHS2 = chrono::steady_clock::now();
+ 	heapSort(ordDec, n);
+ 	auto endHS2 = chrono::steady_clock::now();
+ 	cout<<"Array ordenado:"<<endl;
+    printArray(ordDec,n);
+    cout << "\nTempo decorrido em nanossegundos: "
+        << chrono::duration_cast<chrono::nanoseconds>(endHS2 - startHS2).count()
+        << " ns" << endl;
+
+ 	cout<<"\n\n-------Ordenação por Merge Sort-------\n";
+ 	auto startMS2 = chrono::steady_clock::now();
+ 	mergeSort(ordDec, 0, n-1);
+ 	auto endMS2 = chrono::steady_clock::now();
+ 	cout<<"Array ordenado:"<<endl;
+    printArray(ordDec,n);
+ 	cout << "\nTempo decorrido em nanossegundos: "
+        << chrono::duration_cast<chrono::nanoseconds>(endMS2 - startMS2).count()
+        << " ns" << endl;
+        
+ 	cout<<"\n\n-------Ordenação por Quick Sort-------\n";
+ 	auto startQS2 = chrono::steady_clock::now();
+ 	quickSort(ordDec, 0, n - 1);
+ 	auto endQS2 = chrono::steady_clock::now();
+ 	cout<<"Array ordenado:"<<endl;
+    printArray(ordDec,n);
+ 	cout << "\nTempo decorrido em nanossegundos: "
+        << chrono::duration_cast<chrono::nanoseconds>(endQS2 - startQS2).count()
         << " ns" << endl;
     
     return 0;
