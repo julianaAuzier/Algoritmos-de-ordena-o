@@ -86,7 +86,7 @@ void merge(int *array, int l, int m, int r) {
    for(j = 0; j<nr; j++)
       rarr[j] = array[m+1+j];
    i = 0; j = 0; k = l;
-   //merge arrays temporÃ¡rios em array real
+   //merge arrays temporarios em array real
    while(i < nl && j<nr) {
       if(larr[i] <= rarr[j]) {
          array[k] = larr[i];
@@ -125,7 +125,7 @@ int partition(int arr[], int start, int end){
 		if (arr[i] <= pivot)
 			count++;
 	}
-	// Dando ao elemento pivÃ´ sua posição correta
+	// Dando ao elemento pivo sua posição correta
 	int pivotIndex = start + count;
 	swap(arr[pivotIndex], arr[start]);
 
@@ -154,10 +154,10 @@ void quickSort(int arr[], int start, int end){
 	// particionando o array
 	int p = partition(arr, start, end);
 	
-	// ordena a partiÃ§Ã£o esquerda
+	// ordena a particao esquerda
 	quickSort(arr, start, p - 1);
 
-	// ordena a partiÃ§Ã£o direita
+	// ordena a particao direita
 	quickSort(arr, p + 1, end);
 }
 ////////////////////////////////////////////////////////////////////////////////
