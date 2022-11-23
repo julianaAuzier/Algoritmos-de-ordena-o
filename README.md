@@ -2,7 +2,7 @@
 Comparação entre count sort, merge sort, heap sort e quicksort, para entradas de tamanho 10, 50, 100 e 1000. <br>
 Compilador C++ utilizado: https://www.onlinegdb.com/online_c++_compiler <br><br>
 
-<h3>Tempos em nanossegundos para entrada de tamanho 1000:</h3><br>
+<h3>Tempos em nanossegundos para entrada de tamanho 1000:</h3>
 
               Algoritmos      | Counting |  Heap  | Merge  |   Quick  |
     --------------------------|----------|--------|--------|----------|
