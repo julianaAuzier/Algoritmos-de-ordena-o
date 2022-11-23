@@ -23,16 +23,16 @@ void countingSort(int input_array[],int s, int r){
 		++count_array[input_array[i]];
 	
 	// contagem cumulativa da matriz de contagem para obter as
-	// posições de elementos a serem armazenados na matriz de saída
+	// posiÃ§Ãµes de elementos a serem armazenados na matriz de saÃ­da
 	for(int i=1;i<r;i++)
 		count_array[i]=count_array[i]+count_array[i-1];
 	
-	// colocando os elementos do array de entrada no array de saía com as
-	//  posições de modo que o resultado seja um array classificado na ordem ASC
+	// colocando os elementos do array de entrada no array de saÃ­a com as
+	//  posiÃ§Ãµes de modo que o resultado seja um array classificado na ordem ASC
 	for(int i=0;i<s;i++)
 		output_array[--count_array[input_array[i]]] = input_array[i];
 	
-	// copiar elementos da matriz de saída para a matriz de entrada
+	// copiar elementos da matriz de saÃ­da para a matriz de entrada
 	for(int i=0;i<s;i++)
 		input_array[i]=output_array[i];
 }
@@ -47,15 +47,15 @@ void heapify(int arr[], int n, int i){
 	if (l < n && arr[l] > arr[largest])
 		largest = l;
 
-	// Se o filho certo for maior que o maior até agora
+	// Se o filho certo for maior que o maior atÃ© agora
 	if (r < n && arr[r] > arr[largest])
 		largest = r;
 
-	// Se o maior não for raiz
+	// Se o maior nÃ£o for raiz
 	if (largest != i){
 		swap(arr[i], arr[largest]);
 
-		// Heap recursivamente a sub-árvore
+		// Heap recursivamente a sub-Ã¡rvore
 		heapify(arr, n, largest);
 	}
 }
@@ -67,7 +67,7 @@ void heapSort(int arr[], int n){
 
 	// Um por um, extraia um elemento do heap
 	for (int i = n - 1; i >= 0; i--){
-		// Move raiz atual pra Ãºltima folha
+		// Move raiz atual pra ÃƒÂºltima folha
 		swap(arr[0], arr[i]);
 
 		// chama max heapify no heap reduzido
@@ -86,7 +86,7 @@ void merge(int *array, int l, int m, int r) {
    for(j = 0; j<nr; j++)
       rarr[j] = array[m+1+j];
    i = 0; j = 0; k = l;
-   //merge arrays temporÃ¡rios em array real
+   //merge arrays temporarios em array real
    while(i < nl && j<nr) {
       if(larr[i] <= rarr[j]) {
          array[k] = larr[i];
@@ -125,11 +125,11 @@ int partition(int arr[], int start, int end){
 		if (arr[i] <= pivot)
 			count++;
 	}
-	// Dando ao elemento pivÃ´ sua posição correta
+	// Dando ao elemento pivo sua posiÃ§Ã£o correta
 	int pivotIndex = start + count;
 	swap(arr[pivotIndex], arr[start]);
 
-	// Classificando as partes esquerda e direita do elemento pivô
+	// Classificando as partes esquerda e direita do elemento pivÃ´
 	int i = start, j = end;
 
 	while (i < pivotIndex && j > pivotIndex) {
@@ -154,10 +154,10 @@ void quickSort(int arr[], int start, int end){
 	// particionando o array
 	int p = partition(arr, start, end);
 	
-	// ordena a partiÃ§Ã£o esquerda
+	// ordena a particao esquerda
 	quickSort(arr, start, p - 1);
 
-	// ordena a partiÃ§Ã£o direita
+	// ordena a particao direita
 	quickSort(arr, p + 1, end);
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -173,7 +173,6 @@ int main(){
     for (int k = 0; k < n; k++) {
     randomNumber = (rand() % 1000) + 1;
     ordAle[k] = randomNumber;
-    //cout << randomNumber << endl;
     }
     
     for(int i=0; i<n; i++){
@@ -184,9 +183,9 @@ int main(){
 	setlocale(LC_ALL, "portuguese");
 	//int size= sizeof(ordCresc) / sizeof(ordCresc[0]); //TROCAR
 	int range = 1000;
-	
-	cout<<"-------Ordenação com array ordenado crescente-------\n";
-    cout<<"-------Ordenação por Count Sort-------\n";
+	/*
+	cout<<"-------OrdenaÃ§Ã£o com array ordenado crescente-------\n";
+    cout<<"-------OrdenaÃ§Ã£o por Count Sort-------\n";
     auto startCS = chrono::steady_clock::now();
     countingSort(ordCresc,n,range); //TROCAR
     auto endCS = chrono::steady_clock::now();
@@ -195,8 +194,7 @@ int main(){
     cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endCS - startCS).count()
         << " ns" << endl;
-
-	cout<<"\n\n-------Ordenação por Heap Sort-------\n";
+	cout<<"\n\n-------OrdenaÃ§Ã£o por Heap Sort-------\n";
  	auto startHS = chrono::steady_clock::now();
  	heapSort(ordCresc, n);
  	auto endHS = chrono::steady_clock::now();
@@ -205,8 +203,7 @@ int main(){
     cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endHS - startHS).count()
         << " ns" << endl;
-
- 	cout<<"\n\n-------Ordenação por Merge Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Merge Sort-------\n";
  	auto startMS = chrono::steady_clock::now();
  	mergeSort(ordCresc, 0, n-1);
  	auto endMS = chrono::steady_clock::now();
@@ -216,7 +213,7 @@ int main(){
         << chrono::duration_cast<chrono::nanoseconds>(endMS - startMS).count()
         << " ns" << endl;
         
- 	cout<<"\n\n-------Ordenação por Quick Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Quick Sort-------\n";
  	auto startQS = chrono::steady_clock::now();
  	quickSort(ordCresc, 0, n - 1);
  	auto endQS = chrono::steady_clock::now();
@@ -225,11 +222,10 @@ int main(){
  	cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endQS - startQS).count()
         << " ns" << endl;
-    
-    
-    
-    cout<<"-------Ordenação com array ordenado decrescente-------\n";
-    cout<<"-------Ordenação por Count Sort-------\n";
+    */
+    /*
+    cout<<"-------OrdenaÃ§Ã£o com array ordenado decrescente-------\n";
+    cout<<"-------OrdenaÃ§Ã£o por Count Sort-------\n";
     auto startCS2 = chrono::steady_clock::now();
     countingSort(ordDec,n,range); //TROCAR
     auto endCS2 = chrono::steady_clock::now();
@@ -238,8 +234,7 @@ int main(){
     cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endCS2 - startCS2).count()
         << " ns" << endl;
-
-	cout<<"\n\n-------Ordenação por Heap Sort-------\n";
+	cout<<"\n\n-------OrdenaÃ§Ã£o por Heap Sort-------\n";
  	auto startHS2 = chrono::steady_clock::now();
  	heapSort(ordDec, n);
  	auto endHS2 = chrono::steady_clock::now();
@@ -248,8 +243,7 @@ int main(){
     cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endHS2 - startHS2).count()
         << " ns" << endl;
-
- 	cout<<"\n\n-------Ordenação por Merge Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Merge Sort-------\n";
  	auto startMS2 = chrono::steady_clock::now();
  	mergeSort(ordDec, 0, n-1);
  	auto endMS2 = chrono::steady_clock::now();
@@ -259,7 +253,7 @@ int main(){
         << chrono::duration_cast<chrono::nanoseconds>(endMS2 - startMS2).count()
         << " ns" << endl;
         
- 	cout<<"\n\n-------Ordenação por Quick Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Quick Sort-------\n";
  	auto startQS2 = chrono::steady_clock::now();
  	quickSort(ordDec, 0, n - 1);
  	auto endQS2 = chrono::steady_clock::now();
@@ -268,11 +262,11 @@ int main(){
  	cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endQS2 - startQS2).count()
         << " ns" << endl;
-
+*/
+///*
 	
-	
-	cout<<"-------Ordenação com array ordenado aleatoriamente-------\n";
-    cout<<"-------Ordenação por Count Sort-------\n";
+	cout<<"-------OrdenaÃ§Ã£o com array ordenado aleatoriamente-------\n";
+    cout<<"-------OrdenaÃ§Ã£o por Count Sort-------\n";
     auto startCS3 = chrono::steady_clock::now();
     countingSort(ordAle,n,range); //TROCAR
     auto endCS3 = chrono::steady_clock::now();
@@ -282,7 +276,7 @@ int main(){
         << chrono::duration_cast<chrono::nanoseconds>(endCS3 - startCS3).count()
         << " ns" << endl;
 
-	cout<<"\n\n-------Ordenação por Heap Sort-------\n";
+	cout<<"\n\n-------OrdenaÃ§Ã£o por Heap Sort-------\n";
  	auto startHS3 = chrono::steady_clock::now();
  	heapSort(ordAle, n);
  	auto endHS3 = chrono::steady_clock::now();
@@ -292,7 +286,7 @@ int main(){
         << chrono::duration_cast<chrono::nanoseconds>(endHS3 - startHS3).count()
         << " ns" << endl;
 
- 	cout<<"\n\n-------Ordenação por Merge Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Merge Sort-------\n";
  	auto startMS3 = chrono::steady_clock::now();
  	mergeSort(ordAle, 0, n-1);
  	auto endMS3 = chrono::steady_clock::now();
@@ -302,7 +296,7 @@ int main(){
         << chrono::duration_cast<chrono::nanoseconds>(endMS3 - startMS3).count()
         << " ns" << endl;
         
- 	cout<<"\n\n-------Ordenação por Quick Sort-------\n";
+ 	cout<<"\n\n-------OrdenaÃ§Ã£o por Quick Sort-------\n";
  	auto startQS3 = chrono::steady_clock::now();
  	quickSort(ordAle, 0, n - 1);
  	auto endQS3 = chrono::steady_clock::now();
@@ -311,6 +305,6 @@ int main(){
  	cout << "\nTempo decorrido em nanossegundos: "
         << chrono::duration_cast<chrono::nanoseconds>(endQS3 - startQS3).count()
         << " ns" << endl;
-	    
+//*/
     return 0;
 }
