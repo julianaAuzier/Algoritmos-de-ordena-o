@@ -1,0 +1,304 @@
+nA_10
+-------Ordenação por Count Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1369 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1377 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1770 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1505 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nA_50
+-------Ordenação por Count Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 1566 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+
+Tempo decorrido em nanossegundos: 8445 ns
+Tempo decorrido em microsegundos: 8 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 6989 ns
+Tempo decorrido em microsegundos: 6 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 6571 ns
+Tempo decorrido em microsegundos: 6 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nA_100
+-------Ordenação por Count Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 2658 ns
+Tempo decorrido em microsegundos: 2 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+
+Tempo decorrido em nanossegundos: 18982 ns
+Tempo decorrido em microsegundos: 18 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 18883 ns
+Tempo decorrido em microsegundos: 18 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 16406 ns
+Tempo decorrido em microsegundos: 16 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nC_10
+-------Ordenação por Count Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1000 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+
+Tempo decorrido em nanossegundos: 1865 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1464 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 882 ns
+Tempo decorrido em microsegundos: 0 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nC_50
+-------Ordenação por Count Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 1454 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+
+Tempo decorrido em nanossegundos: 9040 ns
+Tempo decorrido em microsegundos: 9 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 5428 ns
+Tempo decorrido em microsegundos: 5 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 5824 ns
+Tempo decorrido em microsegundos: 5 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nC_100
+-------Ordenação por Count Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 1985 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+
+Tempo decorrido em nanossegundos: 19431 ns
+Tempo decorrido em microsegundos: 19 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 11114 ns
+Tempo decorrido em microsegundos: 11 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 15355 ns
+Tempo decorrido em microsegundos: 15 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nD_10
+-------Ordenação por Count Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1030 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+
+Tempo decorrido em nanossegundos: 1205 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1467 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+12 18 19 26 34 36 55 65 67 70 
+Tempo decorrido em nanossegundos: 1158 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nD_50
+-------Ordenação por Count Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 1492 ns
+Tempo decorrido em microsegundos: 1 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+
+Tempo decorrido em nanossegundos: 7543 ns
+Tempo decorrido em microsegundos: 7 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 5992 ns
+Tempo decorrido em microsegundos: 5 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+8 8 9 12 14 16 17 18 18 19 19 23 24 24 24 25 31 31 32 33 33 34 40 42 45 45 47 56 58 59 60 63 64 67 69 69 70 70 72 73 76 76 79 80 90 91 92 94 96 96 
+Tempo decorrido em nanossegundos: 7632 ns
+Tempo decorrido em microsegundos: 7 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+nD_100
+-------Ordenação por Count Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 2169 ns
+Tempo decorrido em microsegundos: 2 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Heap Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+
+Tempo decorrido em nanossegundos: 20895 ns
+Tempo decorrido em microsegundos: 20 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Merge Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 11499 ns
+Tempo decorrido em microsegundos: 11 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
+
+-------Ordenação por Quick Sort-------
+Array ordenado:
+4 6 7 7 8 9 9 9 10 11 12 12 16 16 16 17 17 18 20 20 20 22 24 24 25 25 26 27 27 28 28 31 32 32 32 33 34 35 35 36 39 40 40 40 41 43 43 44 44 45 46 47 48 49 52 55 58 59 59 60 61 63 63 64 65 67 68 70 70 71 71 72 75 75 76 80 80 81 81 83 83 84 85 88 90 92 92 93 93 94 94 95 95 95 95 97 98 98 98 99 
+Tempo decorrido em nanossegundos: 16582 ns
+Tempo decorrido em microsegundos: 16 µs
+Tempo decorrido em millisegundos: 0 ms
+Tempo decorrido em segundos: 0 sec
