@@ -3,6 +3,7 @@ Comparação entre count sort, merge sort, heap sort e quicksort, para entradas 
 Compilador C++ utilizado: https://www.onlinegdb.com/online_c++_compiler <br><br>
 
 Resultados para entrada de tamanho 1000:<br>
+
                          | Counting |	Heap | Merge | Quick
 ----------------------------------------------------------
 Ordenado - crescente | 19399 | 259429 | 130118 | 2004133
