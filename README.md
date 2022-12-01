@@ -4,7 +4,7 @@ Compilador C++ utilizado: https://www.onlinegdb.com/online_c++_compiler <br><br>
 
 <h3>Tempos em nanossegundos para entrada de tamanho 1000:</h3>
 
-              Algoritmos      | Counting |  Heap  | Merge  |   Quick  |
+      Entradas / Algoritmos   | Counting |  Heap  | Merge  |   Quick  |
     --------------------------|----------|--------|--------|----------|
     Ordenado - crescente      |  19399   | 259429 | 130118 |  2004133 |
     Ordenado - aleatoriamente |  17347   | 239183 | 103571 |  1420459 |
